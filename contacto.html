@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="contact-body">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style-contacto.css">
+</head>
+<body >
+    <!--HEADER TITULO Y FONDO DE LA CABECERA-->
+    <header>
+        <h1>SportsBros Peru</h1>
+        <h2>Calidad y garantía para tus gains</h2>
+        <h2 style="border: 1px solid; width: 200px;justify-content: center;">Atencion al cliente</h2>
+    </header>
+
+    <hr>
+
+    <!--Navegacion-->
+    <nav class="navegacion">
+        <ul class="lista">
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="contacto.html" target="_blank">Contactenos</a></li>
+        <li><a href="https://www.linkedin.com/in/emiliano-garcia-arata-40a192168/">Quienes Somos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="form-contact">
+            <h3>Escribenos ahora</h3>
+
+            <!-- FORMULARIO -->
+            <form action="" method="post">
+                <div>
+                    <label for="txtnombre">Ingesa tu nombre</label>
+                    <input type="text" name="txtnombre" id="txtnombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div>
+                    <label for="txtapellidoPaterno">Ingesa tu apellido paterno </label>
+                    <input type="text" name="txtapellidoPaterno" id="txtapellidoPaterno" placeholder="Escribe tu apelldio" required>
+                </div>
+                <div>
+                    <label for="txtemail">Ingesa tu correo electronico</label>
+                    <input type="email" name="txtemail" id="txtemail" placeholder="Escribe tu correo" autocomplete="off"
+                    required>
+                </div>
+
+                <div>
+                    <label for="">Ingesa tu numero</label>
+                    <input type="tel" name="numphone" id="numphone" placeholder="Ingresa tu numero" autocomplete="off"
+                    required maxlength="13" minlength="9">
+                </div>
+
+
+                <!--TEXTAREA CUERPO DE TEXPO-->
+                <div>
+                    <label for="bodyDetalle">Ingrese su mensaje</label>
+                    <textarea name="bodyDetalle" id="bodyDetalle" cols="40" rows="10" placeholder="Detalle su mensaje"></textarea>
+                </div>
+
+                <!--INPUT CHECKBOX-->
+                <div>
+                    <input type="checkbox" name="bolAutorizo" id="bolAutorizo" required>
+                    <label for="bolAutorizo">Autorizo el envio de publicidad e informacion comercial</label>
+                </div>
+            </section>
+
+
+                <button>Enviar</button>
+
+
+                <!-- UBICANOS-->
+                <section>
+                    <h3>Ubicanos</h3>
+                    <p>C.C Jockey Plaza - Santiago de Surco <br> Lima - Peru</p>
+                    <p>Telefono: 01 214 231 343 / 941 431 459</p>
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.3937032684285!2d-76.98158678518703!3d-12.085177491441733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c79f5dacafbf%3A0x2aecf92fd4325f0d!2sJockey%20Plaza!5e0!3m2!1sen!2spe!4v1679537332746!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>               
+            </form>
+        </section>
+        <section>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+
+</body>
+</html>
