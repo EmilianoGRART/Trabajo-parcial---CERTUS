@@ -1,43 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Brothers</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-        </style>
-        
+    </style>
+
 </head>
+
 <body>
-    <!--Cabecera de la pagina -->  
+    <!--Cabecera de la pagina -->
     <header>
         <div class="textoheader">
-        <h1>SportsBros Peru</h1>
+            <h1>SportsBros Peru</h1>
         </div>
     </header>
 
     <!--Navegacion-->
-    <nav class="navegacion">
-        <ul class="lista">
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="contacto.html" target="_blank">Contactenos</a></li>
-        <li><a href="https://www.linkedin.com/in/emiliano-garcia-arata-40a192168/">Quienes Somos</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactenos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
 
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-success"      data-bs-toggle="modal" data-bs-target="#ventanaCarrito">Carrito</button>
+                </form>
+            </div>
+        </div>
     </nav>
+
+    <!-- VENTANA DE CARRITO-->
+    <div id="ventanaCarrito" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Su carrito actualmente esta vacio.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary">Limpiar carrito</button>
+                    <button type="button" class="btn btn-primary">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--NOTIFICACION-->
 
     <p class="notificacion" style="">Ventas de productos catalogo marzo</p>
-    <!--Seccion de galeria de prodductos-->
-     <!--Cada article es un caja y cuenta con Titulo, imagen, precio y boton-->
-    <main>
+
+    <!-- PARTE PRINCIPAL -->
+    <main class="container">
         <section id="catalogo">
-            <article>
+
+            <article class="col">
                 <h3>Kit de Box Sportbro: Guantes y saco de box</h3>
                 <hr>
                 <picture class="caja">
@@ -45,15 +98,15 @@
                 </picture>
                 <hr>
                 <div class="descripcion">
-                <h4>Adquierelo a tan solo:</h4>
-                <p class="precioAnterior">S/.329</p>
-                <p class="precioDespues">S/.219</p>
-                <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <h4>Adquierelo a tan solo:</h4>
+                    <p class="precioAnterior">S/.329</p>
+                    <p class="precioDespues">S/.219</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
             </article>
 
-            <article>
+            <article class="col">
                 <h3>Set de pesas SportBro en acabados metalicos</h3>
                 <hr>
                 <picture>
@@ -62,14 +115,14 @@
                 <hr>
                 <div class="descripcion">
                     <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.419</p>
-                <p class="precioDespues">S/.279</p>
-                <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <p class="precioAnterior">S/.419</p>
+                    <p class="precioDespues">S/.279</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
             </article>
 
-            <article>
+            <article class="col">
                 <h3>Pesas de caucho de 5 Kilos</h3>
                 <hr>
                 <picture>
@@ -78,14 +131,14 @@
                 <hr>
                 <div class="descripcion">
                     <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.329</p>
-                <p class="precioDespues">S/.219</p>
-                <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <p class="precioAnterior">S/.329</p>
+                    <p class="precioDespues">S/.219</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
 
             </article>
-            <article>
+            <article class="col">
                 <h3>Set de pesas de goma</h3>
                 <hr>
                 <picture>
@@ -94,77 +147,77 @@
                 <hr>
                 <div class="descripcion">
                     <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.329</p>
-                <p class="precioDespues">S/.219</p>
-                <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <p class="precioAnterior">S/.329</p>
+                    <p class="precioDespues">S/.219</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
 
             </article>
-            <article>
+            <article class="col">
                 <h3>Maquina Trotadora: MTDPKRD105C</h3>
-                 <hr>
+                <hr>
                 <picture>
                     <img src="/imagenes/maquinatrotadora.jpg" alt="producto">
                 </picture>
-                 <hr>
+                <hr>
                 <div class="descripcion">
                     <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.329</p>
-                <p class="precioDespues">S/.219</p> 
-                <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <p class="precioAnterior">S/.329</p>
+                    <p class="precioDespues">S/.219</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
 
             </article>
-            <article>
-                <h3>Pesas 20kg Mancuerna Plastificada y Adaptador     </h3>
-                 <hr>
+            <article class="col">
+                <h3>Pesas 20kg Mancuerna Plastificada y Adaptador </h3>
+                <hr>
                 <picture>
                     <img src="/imagenes/pesasdeplastico.jpg" alt="producto">
                 </picture>
-                 <hr>
+                <hr>
                 <div class="descripcion">
                     <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.329</p>
-                <p class="precioDespues">S/.219</p>
-                 <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <p class="precioAnterior">S/.329</p>
+                    <p class="precioDespues">S/.219</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
             </article>
 
-            <article>
+            <article class="col">
                 <h3>Set de mancuernas de goma Bodytone</h3>
-                 <hr>
+                <hr>
                 <picture>
                     <img src="/imagenes/setdemancuernasgoma.jpg" alt="producto">
                 </picture>
-                 <hr>
+                <hr>
                 <div class="descripcion">
                     <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.329</p>
-                <p class="precioDespues">S/.219</p>
-                 <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <p class="precioAnterior">S/.329</p>
+                    <p class="precioDespues">S/.219</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
 
             </article>
-            <article>
+            <article class="col">
                 <h3>Kettle Bell 5kg <br>Bodytone</h3>
-                 <hr>
+                <hr>
                 <picture>
                     <img src="/imagenes/kettlebell.jpg" alt="producto">
                 </picture>
-                 <hr>
+                <hr>
                 <div class="descripcion">
                     <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.120</p>
-                <p class="precioDespues">S/.79</p>
-                <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <p class="precioAnterior">S/.120</p>
+                    <p class="precioDespues">S/.79</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
             </article>
-            <article>
+            <article class="col">
                 <h3>Kit de Box Sportbro: Guantes y saco de box</h3>
                 <hr>
                 <picture>
@@ -172,11 +225,11 @@
                 </picture>
                 <hr>
                 <div class="descripcion">
-                <h4>Adquierelo a tan solo</h4>
-                <p class="precioAnterior">S/.329</p>
-                <p class="precioDespues">S/.219</p>
-               <hr>
-                <button class="btn-comprar">Agregar</button>
+                    <h4>Adquierelo a tan solo</h4>
+                    <p class="precioAnterior">S/.329</p>
+                    <p class="precioDespues">S/.219</p>
+                    <hr>
+                    <button class="btn-comprar">Agregar</button>
                 </div>
             </article>
 
@@ -185,8 +238,12 @@
     </main>
 
 
-    
 
-    
+
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
 </html>

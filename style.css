@@ -22,35 +22,11 @@ header{
     font-size: 3vh;
 }
 
-.navegacion{
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    height: fit-content;
-}
-
-.navegacion ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-}
-.navegacion ul li:hover{
-    background-color: rgba(75, 71, 71, 0.347);
-    cursor: pointer;
-    transition: 140ms;
-}
 ul li{
-    padding: 2vh 4vw;
+    padding: 1vh 4vw;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 1em;
-  }
+
   .notificacion{
     color:black; text-align: center; font-size: 1.5em; background-color:rgba(83, 83, 78, 0.296); border-end-start-radius: 195px; border-end-end-radius: 195px;
   }
@@ -59,6 +35,10 @@ a {
     transition: 150ms;
   }
 
+
+nav .btn{
+    margin-right:  20px;
+}
 
 
     /*CATALOGO Y ARTICULOS*/
@@ -77,7 +57,6 @@ a {
         width: 250px;
         margin-bottom: 30px;
         margin: 30px 50px;
-        box-sizing: border-box;
         transition: 200ms;
         border-radius: 20px;
     }
@@ -112,9 +91,7 @@ img {
     width: 200px;
     align-items: center;
     display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    border-bottom: 4px solid #00000069 ;
+    margin: 10px auto;
 }
 
 
