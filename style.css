@@ -4,85 +4,30 @@
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
 }
-html{
-    background-color: #0D0D0D;
-}
-main{
-        background-color: rgb(0, 0, 0) ;
-        font-weight: 800;
-}
-.contact-body{
-    color: white;
-}
-
-
-a {
-    color: white;
-    text-decoration: none;
-  }
-
-  /*CATALOGO Y ARTICULOS*/
-  #catalogo{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #0D0D0D;
-    padding-left: 20px;
-    padding-right: 0px;
-    margin: 30px 50px;
-    width: auto;
-    justify-content: center;
-    justify-self: center;
-}
-article{
-    background-color: #f2aa6bbe;
-    padding: 10px 5px;
-    width: 250px;
-    margin-bottom: 30px;
-    margin: 30px 50px;
-    box-sizing: border-box;
-    transition: 200ms;
-    border-radius: 20px;
-}
-
-article:hover{
-    transform:scale(1.03);
-    transition: 200ms;
-    cursor: pointer;
-    /* offset-x | offset-y | blur-radius | color */
-    /*box-shadow: 10px 5px 5px blue;*/
-}
-
-article h3{
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-
 /*CABECERA Y NAVEGACION*/
 header{
-    color: white;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: solid 2px black;
-    background-image: url(/imagenes/Agregar\ un\ título.png);
-    background-repeat: no-repeat;
+    height: 30vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1619252584172-a83a949b6efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
     background-size: cover;
     background-position: center;
-    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .textoheader{
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
+    text-align: center;    
     font-weight:bolder;
-    font-size: x-large
+    font-size: 3vh;
 }
 
 .navegacion{
-    background-color: #40121A;
-    border-bottom: solid 2px black;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
 }
 
 .navegacion ul{
@@ -92,14 +37,71 @@ header{
     list-style: none;
 }
 .navegacion ul li:hover{
-    background-color: rgba(229, 229, 229, 0.266);
+    background-color: rgba(75, 71, 71, 0.347);
     cursor: pointer;
+    transition: 140ms;
 }
 ul li{
-    color: white;
-    padding: 10px 30px;
-    
+    padding: 2vh 4vw;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1em;
+  }
+  .notificacion{
+    color:black; text-align: center; font-size: 1.5em; background-color:rgba(83, 83, 78, 0.296); border-end-start-radius: 195px; border-end-end-radius: 195px;
+  }
+  .notificacion:hover{ 
+    background-color: rgba(0, 0, 0, 0.364);
+    transition: 150ms;
+  }
+
+
+
+    /*CATALOGO Y ARTICULOS*/
+    #catalogo{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 0px;
+        margin: 30px 50px;
+        width: auto;
+        justify-content: center;
+        justify-self: center;
+    }
+    article{
+        padding: 10px 5px;
+        width: 250px;
+        margin-bottom: 30px;
+        margin: 30px 50px;
+        box-sizing: border-box;
+        transition: 200ms;
+        border-radius: 20px;
+    }
+    
+    
+    article:hover{
+        transform:scale(1.03);
+        transition: 200ms;
+        cursor: pointer;
+        /* offset-x | offset-y | blur-radius | color */
+        /*box-shadow: 10px 5px 5px blue;*/
+    }
+    
+    hr{ 
+        color: rgba(171, 151, 151, 0.634);
+        border: 1px solid;
+    }
+    
+    article h3{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    
+    
 
 /*Contenido de productos*/
 .descripcion{
@@ -142,7 +144,8 @@ img {
 }
 
 .btn-comprar:hover{
-    background-color: rgba(153, 205, 50, 0.614);
+    background-color: rgba(254, 255, 251, 0.614);
     transform: scale(1.1);
+    color: black;
     box-shadow: 2px 2px black;
 }
