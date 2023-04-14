@@ -3,7 +3,7 @@
     padding: 0px;
 }
 header{
-    background-color: aquamarine;
+    background-color: white;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -39,6 +39,15 @@ ul li{
 }
 
 main{ 
-    background-color: antiquewhite;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formulario{
+    padding: 10px;
 }
 

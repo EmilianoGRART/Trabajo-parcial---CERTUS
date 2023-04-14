@@ -4,6 +4,7 @@
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
 }
+
 /*CABECERA Y NAVEGACION*/
 header{
     height: 30vh;
@@ -102,7 +103,7 @@ img {
 }
 .precioDespues{
     font-size:x-large;
-    text-decoration:;
+    text-decoration:none;
 }
 
 /*BOTON*/
@@ -126,3 +127,4 @@ img {
     color: black;
     box-shadow: 2px 2px black;
 }
+
