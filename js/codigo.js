@@ -20,7 +20,7 @@ function agregarCarrito(producto){
    let modalCuerpo = document.querySelector("#ventanaCarrito > div > div > div.modal-body");
    
    /* CONDICIONAL PARA SABER SI ESTA VACIO*/
-   if(modalCuerpo.querySelector("p").innerHTML == "Su carrito actualmente esta vacio."){
+   if(modalCuerpo.querySelector("p").innerHTML == "Tu carrito esta vacio"){
    modalCuerpo.innerHTML = "";
     }
 

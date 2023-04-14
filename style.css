@@ -128,3 +128,8 @@ img {
     box-shadow: 2px 2px black;
 }
 
+
+button a{
+    text-decoration: none;
+    color: white;
+}
