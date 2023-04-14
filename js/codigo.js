@@ -30,5 +30,14 @@ function agregarCarrito(producto){
    alert("Se agrego correctamente el producto");
 }
 
+
+/*METODO PARA LIMPIAR EL CARRITO*/
+let botonLimpiar = document.querySelector("#limpiar");
+botonLimpiar.addEventListener("click", limpiarCarrito);
+
+function limpiarCarrito() {
+    let modalCuerpo = document.querySelector("#ventanaCarrito > div > div > div.modal-body");
+    modalCuerpo.innerHTML = "<p>Tu carrito esta vacio</p>";
+  }
  
 
